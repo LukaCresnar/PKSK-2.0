@@ -1,0 +1,160 @@
+
+main{
+    /* background-image: url(../img/TEMP_IMG_08.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+
+
+#bol{
+    max-width: 1200px;
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+    grid-template-areas: 
+    'text-bol text-bol img1-bol'
+    'map-bol img2-bol img3-bol';
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30vh 30vh;
+}
+
+
+.text-bol, .map-bol, .img1-bol, .img2-bol, .img3-bol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-bol, .img1-bol, .img2-bol, .img3-bol,.text-bol{
+    height: 100%;
+    width: 100%;
+}
+
+img{object-fit: cover;}
+
+
+.text-bol{
+    text-align: center;
+    grid-area: text-bol;
+}
+
+.img1-bol{
+    grid-area: img1-bol;
+}
+
+.map-bol{
+    grid-area: map-bol;
+}
+
+.img2-bol{
+    grid-area: img2-bol;
+}
+
+.img3-bol{
+    grid-area: img3-bol;
+}
+
+
+
+#visoka{
+    max-width: 1200px;
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+    grid-template-areas:
+    'text-visoka text-visoka img1-visoka'
+    'map-visoka img2-visoka img1-visoka' ;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30vh 30vh;
+}
+
+.text-visoka, .map-visoka, .img1-visoka, .img2-visoka{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.text-visoka{
+    text-align: center;
+    grid-area: text-visoka;
+}
+
+.img1-visoka{
+    grid-area: img1-visoka;
+}
+
+.map-visoka{
+
+    grid-area: map-visoka;
+}
+
+.img2-visoka{
+
+    grid-area: img2-visoka;
+}
+
+select{
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    border: rgb(220, 222, 228) solid 1px;
+    border-radius: 15px;
+    font-family: var(--font-2);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 800px){
+    .background-white{
+        height: auto;
+    }
+    
+    iframe{
+        height: 400px;
+    }
+
+    #visoka{
+        grid-template-areas:
+        'text-visoka'
+        'img1-visoka'
+        'map-visoka'
+        'img2-visoka';
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    #bol{
+
+        grid-template-areas: 
+        'text-bol'
+        'img1-bol'
+        'img3-bol'
+        'map-bol'
+        'img2-bol'
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}

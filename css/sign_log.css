@@ -1,0 +1,229 @@
+main{
+    background-image: url(../img/TEMP_IMG_04.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 90vh;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 65vh;
+    text-align: center;
+    color: white;
+    font-family: var(--font-2);
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    /* overflow: hidden; */
+}
+#regisracija, #prijava, #pozabljeno, #ponastavitev, #ponastavljeno{
+ height: 100%;
+ min-height: 65vh;
+}
+
+#regisracija form, 
+#prijava form, 
+#pozabljeno form, 
+#ponastavitev form, 
+#ponastavljeno form{
+    display: flex;
+    flex-direction: column;
+  height: auto;
+}
+
+.forma{
+    height: auto;
+    flex-grow: 1;
+}
+form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.twoByOne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.twoByOne input:last-child{
+    margin-right: 0px;
+}
+
+
+form div{
+    width: 100%;
+    padding: 15px 0px;
+}
+
+input,.gumb-3{
+    border: rgb(6, 110, 102) solid 2px;
+    background-color: rgba(38, 39, 41, 0.651);
+    color: white;
+    border-radius: 50px;
+
+    font-family: var(--font-2);
+    font-size: 1rem;
+    letter-spacing: 0.025rem;
+
+    padding: 5px 15px;
+    height: 50px;
+    width: 100%;
+    margin-right: 15px ;
+}
+
+input:focus{
+    outline: none;
+    border: rgb(18, 139, 129)solid 2px;
+}
+
+
+
+.gumb{
+    
+    background-color: rgb(6, 110, 102);
+}
+
+.gumb:hover{
+    background-color: rgb(18, 139, 129);
+    transition: 200ms;
+    cursor: pointer;
+}
+#prijavaReg{
+    margin-left: 0px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+#prijavaReg a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active, .inactive{
+    padding: 0;
+    width: 100%;
+    border: none;
+    height: 70px;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    background-color: rgb(28, 48, 46);
+    color: white;
+}
+
+.inactive:hover{
+    background-color: rgb(35, 138, 131);
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(48, 187, 178);
+}
+
+p{
+    letter-spacing: 0rem;
+}
+
+a{
+    color: white;
+}
+
+.gumb-2{
+    width: 200px;
+    margin-left: -30px;
+}
+
+.gumb-3{
+    padding: 0px;
+}
+
+.gumb-3 a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* @media (min-width:421px) and (max-width: 1024px){
+    .background{
+        width: 75vw;
+    }
+
+    #prijavaReg{
+        width: 75vw;
+    }
+} */
+
+@media (min-width:0px) and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .background{
+        padding: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #prijavaReg{
+        width: 100%;
+    } 
+    /* #registracija{
+        width: 100vw;
+    } */
+
+    .twoByOne{
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    input{
+        margin-right: 0px;
+    }
+
+    main{
+        height: auto;
+    }
+
+    form div {
+        padding: 15px 10px;
+    }
+}
+

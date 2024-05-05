@@ -1,0 +1,88 @@
+main{
+    height: auto;
+    /* background-image: url(../img/TEMP_IMG_08.jpg); */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p{
+    width: fit-content;
+}
+
+
+.grid{
+    
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.grid div{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+#con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* .naslov1{
+    grid-area: nas1;
+    text-align: center;
+
+}
+
+.naslov2{
+    grid-area: nas2;
+    text-align: center;
+}
+.line{
+    grid-area: line;
+    background-color: rgba(206, 213, 219, 0.986);
+    width: 2px;  */
+/* } */
+/* .kontakt{
+    grid-area: kon;
+    
+}
+
+.kontakt p{
+    width: 50%;
+
+} */
+
+/* .ljudje{
+    grid-area: lud;
+} */
+
+
+
+a{
+    color: inherit;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .grid div{
+        justify-content: flex-start;
+    }
+}

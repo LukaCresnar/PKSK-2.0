@@ -1,0 +1,161 @@
+
+main{
+    height: auto;
+    background-attachment: fixed;
+    /* background-image: url(../img/TEMP_IMG_05.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.background-white{
+    height: auto;
+}
+
+.div-4{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.left{
+    /* margin-left: 5vmin; */
+    width: 100%;
+}
+
+.right{
+    /* padding: 60px; */
+    width: 100%;
+    /* height: 100%; */
+}
+
+#treningiSeznam{
+    font-family: var(--font-2);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+    margin: 0px;
+    
+}
+
+#treningiSeznam li {
+    margin-left: 2rem;
+}
+
+#con-info, #con-skup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#con-skup{
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+#con-urnik{
+    width: 100%;
+    max-width: 800px;
+    /* min-width: 500px; */
+    overflow-x: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+a{
+    color: inherit;
+}
+
+.table-1 {
+    min-height: 20rem;
+    width: 100%;
+    max-width: 500px;
+    border: rgba(0, 0, 0, 0.342) solid 1px;
+    text-align: center;
+}
+
+.table-1 td {
+    font-family: var(--font-2);
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.table-1 th {
+    font-family: var(--font-3);
+    font-size: 1.2rem;
+    padding:  5px;
+}
+
+
+
+.table-2{
+    border: rgba(0, 0, 0, 0.342) solid 0.5px;
+    /* padding: 10px; */
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.table-2 td{
+    border: solid 1px rgb(114, 112, 112);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--font-2);
+}
+
+.table-2 tr, .table-2 th{
+    font-family: var(--font-3);
+    width: 5rem;
+    height: 1rem;
+    font-size: 1rem;
+}
+
+.prosto{
+    background-color: rgba(36, 170, 24, 0.76);
+}
+
+.table-2 td.cas, .table-2 th.cas{
+    transform: translateY(-50%);
+    border: none;
+    text-align: right;
+    max-width: 3ch  ;
+    padding: 0;
+    padding-right: 5px;
+}
+
+@media (min-width: 421px) and (max-width: 1024px){
+    .background-white{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 420px){
+    .background-white{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .div-4{
+        height: 100%;
+    }
+
+    table {
+        height: auto;
+    }
+    
+
+}
+
+@media screen and (max-width: 850px) {
+    #con-info, #con-skup{
+        flex-direction: column;
+    }
+}

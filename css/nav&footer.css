@@ -1,0 +1,334 @@
+header {
+    width: 14.285vw;
+    height: 10vh;
+    background-color: white;
+    padding: 5px 20px;
+}
+
+nav { 
+    width: 100%;   
+    height: 10vh;
+    background-color: rgb(47, 48, 49);
+    display: flex;
+    flex-direction: row;
+}
+
+/*  reeeeeeeeeeeeeeeeeeeeeeeee */
+
+#main-menu{   
+    background-color: white;
+    width: 71.5vw;  
+    height: 10vh;    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.menu-item>a, #user>a, .dropdown{    
+    color: var(--color-cyan);
+    
+} 
+
+#user {
+    background-color: white;   
+    width: 14vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;    
+}
+
+.menu-item>a,  .dropdown {
+    width: 14vw;
+    height: 10vh;    
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-3);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item, .dropdown{
+    width: 14vw;
+}
+
+
+
+.menu-item>a:hover, .dropdown:hover,  #user:hover{   
+    transition: 300ms;
+    color: white;
+    background-color: var(--color-cyan-light);
+}
+
+.dropdown-content{
+    width: 14vw;
+    position: absolute;
+    top: 10vh;
+    display: none;    
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-cyan-light);
+    color: white;
+    text-decoration: none;
+    display: block;
+    z-index: 10;
+    font-size: 1rem;
+    font-family: var(--font-3);
+}
+
+.dropdown-content a:hover{
+    background-color: white;
+    color: var(--color-cyan-light);
+}
+
+#navBar{
+    width: 100%;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    transition: top 300ms;
+} */
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: rgb(37, 38, 41);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 30px;
+    overflow-y: hidden;
+}
+
+footer div{
+    height: 100%;
+    width: 100%;
+}
+
+footer h1{
+    border-bottom: white 1px solid;
+    width: auto;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer p{
+    color: white;
+}
+
+.con-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.con-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.con-2 a{
+    color: white;
+    font-family: var(--font-2);
+    font-size: 1rem;
+    letter-spacing: .025em;
+}
+
+.kontakt, .lokacija, .ostalo{
+    width: 33vw;
+    height: 100%;
+}
+
+#mobile-nav{
+    display: none;
+    float: right;
+    background-color: white;   
+    width: 200px;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#mobile-nav:hover{
+    color: white;
+    background-color: var(--color-cyan-light);
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+
+
+@media  (min-width: 421px) and (max-width: 1024px){
+    nav{
+        background-color: white;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #mobile-nav{
+        display: flex;
+    }
+
+    #main-menu{
+        position: absolute;
+        top: -50vh;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }  
+
+    .menu-item>a,  .dropdown, #user a{
+        width: 100%;
+        height: auto;
+    }
+    
+    .menu-item, .dropdown{
+        width: 100%;
+    }
+
+
+    .dropdown-content{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        display: none;    
+        z-index: 10;
+    }
+
+    .dropdown{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-content a {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+
+    }
+
+    #user{
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    #user div{
+        margin: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .kontakt, .lokacija, .ostalo{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 0px) and (max-width: 420px){
+    nav{
+        background-color: white;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #mobile-nav{
+        display: flex;
+    }
+
+    .dropdown:hover #main-menu{
+        display: block;
+    }
+   
+
+    #main-menu{
+        position: absolute;
+        top: -50vh;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }  
+
+    .menu-item>a,  .dropdown {
+        width: 100%;
+        height: auto;
+    }
+    
+    .menu-item, .dropdown{
+        width: 100%;
+    }
+
+
+    .dropdown-content{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        display: none;    
+        z-index: 10;
+    }
+
+    .dropdown{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-content a{
+        width: 100%;
+        padding: 10px;
+        height: auto;
+
+    }
+
+    #user{
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    #user div{
+        margin: 10px;
+    }
+    footer {
+        flex-direction: column;
+    }
+
+    .kontakt, .lokacija, .ostalo{
+        width: 100%;
+    }
+
+    .con-1{
+        flex-direction: column;
+    }
+    
+}
